@@ -18,7 +18,7 @@
 <script src="./assets/jquery-3.4.1.min.js"></script>
 
 <body>
-  <div id="main" onclick="navigator.vibrate([100, 50, 100])">
+  <div id="main">
     <div id="container1">
       <canvas id="canvas"></canvas>
       <div  id="prize-model">
@@ -39,7 +39,7 @@
   </div>
   <div class="mainContainer">
     <img src="./assets/winners.png" class="winner">
-    <div class="scroll">
+    <div class="scroll" onclick="navigator.vibrate([100, 50, 100])">
       <p style="text-align: center; color: white; font-size: 15px; margin: 0px; margin-top: 5px; margin-bottom: 10px;">
         Winner's List</p>
       <marquee behavior="smooth" direction="up" style="font-size: 20px; color: white; height: 40px; text-align: center;"
